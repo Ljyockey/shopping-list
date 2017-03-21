@@ -13,6 +13,9 @@ $(".shopping-list").on('click', (".shopping-item-toggle"), function(e) {
 });
 
 /*Remove item when delete is clicked*/
+$("shopping-list").on('click', (".shopping-item-delete"), function(e){
+	$(this).closest("li").remove();
+});
 
 $("#js-shopping-list-form button").click(function(e) {
 	e.preventDefault();
