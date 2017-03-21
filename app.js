@@ -8,6 +8,9 @@ function addItem(input) {
 };
 
 /*Create a toggle class for when the check button is clicked*/
+$(".shopping-list").on('click', (".shopping-item-toggle"), function(e) {
+	$(this).parent().siblings("span").toggleClass("shopping-item__checked");
+});
 
 /*Remove item when delete is clicked*/
 
